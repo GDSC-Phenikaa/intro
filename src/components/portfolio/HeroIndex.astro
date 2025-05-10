@@ -6,15 +6,15 @@ import { Icon } from "astro-icon/components";
 import Hobbies from "../portfolio/Hobbies.astro";
 
 const  {
-  profileImage = "/images/efeeleprofile.webp",
-  profileAlt = "Photo of Fernando Aldair López Ponce (EFEELE) for the blog",
+  profileImage = "/images/logo.jpeg",
+  profileAlt = "TODO: OwO",
   profileLink = "/about-me",
-  profileTitle = "FrontEnd Developer",
-  profileName = "Fernando López",
-  githubLink = "https://github.com/EFEELE/NeonMint",
+  profileTitle = "Về chúng tớ",
+  profileName = "Phenikaa Google Developer Student Club",
+  githubLink = "https://github.com/GDSC-Phenikaa",
   githubText = "Do you like this blog's design?",
   portfolioImage = "/images/portfolio.webp",
-  email = "hello@efeele.dev",
+  email = "vuxuanmaidev@gmail.com",
 } = Astro.props;;
 ---
 
@@ -41,7 +41,7 @@ const  {
             <div
               class="w-full aspect-square rounded-full bg-center bg-cover"
               style={`background-image: url(${profileImage})`}
-              aria-label="Photo of Fernando Aldair López Ponce (EFEELE) for the blog"
+              aria-label="Photo of Fernando Aldair López Ponce (Phenikaa GDSC) for the blog"
             >
               <a
                 href={profileLink}
@@ -55,41 +55,39 @@ const  {
       <div
         class="flex h-full w-7/12 flex-col justify-center gap-4 p-4 max-md:w-full max-md:gap-2"
       >
-        <span
-          class="relative inline-flex items-center text-xs font-semibold leading-0 dark:text-white text-blacktext max-md:font-medium max-sm:justify-center"
-        >
-          <span
-            class="before:mr-2 before:block before:h-1.5 before:w-1.5 before:rounded-full before:bg-green-400 before:shadow-[0px_0px_0px_3px_rgba(34,_197,_94,_0.5)] before:animate-pulse before:content-['']"
-          ></span>
-          Available for work
-        </span>
-
         <h1
           class="text-4xl font-black leading-none text-blacktext  dark:text-white max-xl:text-3xl max-lg:text-2xl  max-sm:text-center"
         >
-          {profileName} 👋
+          {profileName}
         </h1>
         <p
           class="mb-0 text-lg font-semibold leading-8 text-blacktext dark:text-gray-200 max-xl:text-base"
         >
           <span
             class="bg-gradient-to-r from-riptide-500 to-mint-500 bg-clip-text font-black text-transparent   dark:from-riptide-300 dark:to-mint-200"
-            >{profileTitle}</span
-          > with <span
+            >GDSC Phenikaa</span
+          > là<span
             class="bg-gradient-to-r from-riptide-500 to-mint-500 bg-clip-text font-black text-transparent  dark:from-riptide-300 dark:to-mint-200"
-            >8 years of experience</span
-          >, passionate about development, technology, and coffee that sparks ideas. I love bringing digital projects to life. 🚀☕
+            ></span
+          > gì đó..
         </p>
 
         <div class="flex gap-4 max-sm:flex-col max-sm:items-center">
           <Button
             link={"mailto:" + email}
-            text="Contact Me"
+            text="Liên hệ"
             iconName="envelope"
+            variant="dark"
+          />
+          <Button
+            link="https://github.com/GDSC-Phenikaa"
+            text="GitHub"
+            iconName="github"
+            variant="dark"
           />
           <Button
             link={profileLink}
-            text="About Me"
+            text="Về chúng tớ"
             iconName="person"
             variant="dark"
           />
@@ -105,7 +103,7 @@ const  {
     >
       <div class="flex flex-col-reverse items-start gap-4 max-md:gap-2">
         <Heading text="Beyond the Code" level={3} />
-      </div>
+      </div>s
 
       <div class="overflow-y-auto">
         <Hobbies />
@@ -183,18 +181,7 @@ const  {
         <p
           class="z-2 my-6 text-lg font-semibold leading-6 dark:text-gray-200 text-blacktext max-xl:text-base max-w-[90%] max-md:max-w-[85%]"
         >
-          I love <span
-            class="bg-gradient-to-r from-riptide-500 to-mint-500 bg-clip-text font-black text-transparent  dark:from-riptide-300 dark:to-mint-200"
-            >turning ideas into real projects.</span
-          >
-          <br /> Here I show you some of the <span
-            class="bg-gradient-to-r from-riptide-500 to-mint-500 bg-clip-text font-black text-transparent  dark:from-riptide-300 dark:to-mint-200"
-            >developments</span
-          > I've worked on, applying technology, design, and lots of creativity.
-          <span
-            class="bg-gradient-to-r from-riptide-500 to-mint-500  font-black  bg-clip-text text-transparent  dark:from-riptide-300 dark:to-mint-200"
-            >Check them out!</span
-          >
+          Một số dự án chúng tớ đã triển khai OwO
         </p>
         <img
           class="relative left-0 z-0 mt-40 w-full object-cover transition-all ease-in-out duration-500 group-hover:rotate-2 group-hover:scale-185 max-xl:mt-28 max-lg:mt-10 max-sm:mt-0 max-md:scale-100 max-sm:scale-125 scale-180 max-md:group-hover:scale-105 before:[background-image:radial-gradient(circle,_rgba(13,188,130)_0,_rgba(1,45,34)_100%)] before:absolute before:left-30 before:-bottom-0 before:h-[80%] before:aspect-square before:rounded-full before:blur-3xl before:opacity-80 before:-z-10 before:transition"
