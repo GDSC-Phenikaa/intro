@@ -7,8 +7,8 @@ import { Icon } from "astro-icon/components";
 const currentPath = Astro.url.pathname;
 const routes = ["/", "/portfolio", "/about-me", ]; 
 
-const github = "https://github.com/EFEELE";
-const linkedin = "https://www.linkedin.com/in/efeele/";
+const github = "https://github.com/GDSC-Phenikaa";
+const facebook = "https://facebook.com";
 
 // Check if the current route is in the list of routes
 const isActiveRoute = routes.includes(currentPath);
@@ -40,8 +40,8 @@ const navItems = isActiveRoute
       <div class="max-md:hidden flex items-center justify-center gap-5" role="list">
         <Social link={github} iconName="github" />
         <Social
-          link={linkedin}
-          iconName="linkedin"
+          link={facebook}
+          iconName="facebook"
         />
       </div>
     </div>
