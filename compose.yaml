@@ -1,0 +1,6 @@
+services:
+  gdsc-phenikaa:
+    build:
+      context: .
+    ports:
+      - 4321:4321
