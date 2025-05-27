@@ -3,7 +3,7 @@ import Project from "./Project.astro";
 const allPosts = await Astro.glob("../../pages/portfolio/projects/*.md");
 // Sort by descending date (most recent first)
 allPosts.sort(
-  (a, b) =>
+  (a: { frontmatter: { pubDate: string | number | Date; }; }, b: { frontmatter: { pubDate: string | number | Date; }; }) =>
     new Date(b.frontmatter.pubDate).getTime() -
     new Date(a.frontmatter.pubDate).getTime(),
 );
@@ -19,7 +19,7 @@ allPosts.sort(
     class="mx-auto max-w-7xl grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-5 p-2 py-4 max-h-[150vh] overflow-hidden transition-[max-height] duration-500 ease-in-out"
   >
     {
-      allPosts.map((post) => (
+      allPosts.map((post: { url: unknown; frontmatter: { title: unknown; description: unknown; pubDate: unknown; languages: unknown; image: unknown; }; }) => (
         <Project
           url={post.url}
           title={post.frontmatter.title}
@@ -39,7 +39,7 @@ allPosts.sort(
     <button
       class="absolute font-bold cursor-pointer text-mint-400 dark:text-mint-100 hover:text-mint-500 dark:hover:text-mint-300 transition-all"
     >
-      View More Projects...
+      Xem thêm dự án
     </button>
   </div>
 </section>

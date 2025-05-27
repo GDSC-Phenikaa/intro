@@ -110,6 +110,14 @@ export const languages: Record<string, Language> = {
     name: "Python",
     iconName: "python",
   },
+  nextjs: {
+    name: "Next.js",
+    iconName: "vercel",
+  },
+  golang: {
+    name: "Golang",
+    iconName: "golang",
+  }
 };
 
 export const getLanguage = (lang: string): Language => {
