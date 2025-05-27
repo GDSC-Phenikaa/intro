@@ -7,6 +7,3 @@ image:
   url: "/images/efeeleprofile.webp"
   alt: "Photo of Fernando Aldair López Ponce (Phenikaa GDSC) for the blog"
 ---
-
-## 1. Hay khum 
-Khum có j :v

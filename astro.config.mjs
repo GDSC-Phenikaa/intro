@@ -9,7 +9,7 @@ import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://neonmint.efeele.dev",
+  site: "https://gdsc.phenikaa-uni.edu.vn",
 
   integrations: [preact(), icon(), sitemap({
     filter: (page) =>

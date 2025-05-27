@@ -1,12 +1,10 @@
 ---
 layout:  /src/layouts/ProjectLayout.astro
-title: 'Nothing yet'
+title: 'Nền tảng CTF'
 pubDate: 2025-04-05
 description: 'TODO'
-languages: ["astro", "tailwind", "cloudflare", "javascript","vercel"]
+languages: ["nextjs", "golang"]
 image:
-  url: "/images/projects/neonmint.webp"
-  alt: "Thumbnail of Astro arches."
+  url: "/images/projects/pkactf.png"
+  alt: "Thumbnail of PKA CTF"
 --- 
-
-Khum có gì s
