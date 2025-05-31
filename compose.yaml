@@ -4,3 +4,4 @@ services:
       context: .
     ports:
       - 4321:4321
+    restart: always
