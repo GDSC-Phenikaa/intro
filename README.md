@@ -221,4 +221,5 @@ The site is configured for deployment on Vercel, but can be deployed to any stat
 ## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+[GDSC Phenikaa Landing Page](https://gdsc.phenikaa-uni.edu.vn/)
 
